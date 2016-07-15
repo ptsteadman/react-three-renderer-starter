@@ -40,5 +40,6 @@ module.exports = {
   ],
   eslint: {
     configFile: path.resolve(__dirname, '.eslintrc.js'),
-  }
+  },
+  devtool: '#source-map',
 };
