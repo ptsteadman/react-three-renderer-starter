@@ -1,0 +1,25 @@
+img {
+  max-width: 100%;
+}
+
+#app {
+  max-width: 800px;
+  margin: auto;
+}
+
+a + a {
+  margin-left: 1em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+li {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 1.5em;
+}

@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   // base for resolving the entry is set to the directory containing this config
-  // context: __dirname, 
+  context: __dirname, 
   // the javascript file that imports assets included in the bundle
   entry: ['./src/index.js'],
   // the filename of the output bundle
@@ -26,6 +26,18 @@ module.exports = {
         test: /\.(js|jsx)$/,
         presets: ['es2015', 'react'],
         exclude: /node_modules/,
+      },
+      {
+        loader: 'raw-loader',
+        test: /\.(txt)$/,
+      },
+      {
+        loader: 'style-loader!css-loader',
+        test: /\.(css)$/,
+      }, 
+      {
+        loader: 'url-loader?limit=8192',
+        test: /\.(png|jpg|gif)$/,
       }
     ],
   },

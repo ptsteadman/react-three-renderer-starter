@@ -22,8 +22,8 @@ class Simple extends React.Component {
       // React will be sure that the rotation has now updated.
       this.setState({
         cubeRotation: new THREE.Euler(
-          this.state.cubeRotation.x + 0.1,
-          this.state.cubeRotation.y + 0.1,
+          this.state.cubeRotation.x + 0.01,
+          this.state.cubeRotation.y + 0.01,
           0
         ),
       });
@@ -31,13 +31,10 @@ class Simple extends React.Component {
   }
 
   render() {
-    const width = window.innerWidth; // canvas width
-    const height = window.innerHeight; // canvas height
-
     return (<React3
       mainCamera="camera" // this points to the perspectiveCamera below
-      width={width}
-      height={height}
+      width={this.props.width}
+      height={this.props.height}
       onAnimate={this.onAnimate}
       clearColor={0xFFFFFF}
     >
@@ -45,27 +42,33 @@ class Simple extends React.Component {
         <perspectiveCamera
           name="camera"
           fov={75}
-          aspect={width / height}
+          aspect={this.props.width / this.props.height}
           near={0.1}
           far={1000}
-
           position={this.cameraPosition}
-        />
+        >
+          <pointLight color={0xffffff} intensity={1.4} />
+        </perspectiveCamera>
         <mesh
           rotation={this.state.cubeRotation}
         >
           <boxGeometry
-            width={1}
-            height={1}
-            depth={1}
+            width={3}
+            height={3}
+            depth={3}
           />
-          <meshBasicMaterial
-            color={0x00ff00}
+          <meshLambertMaterial
+            color={0xacccd5}
           />
         </mesh>
       </scene>
     </React3>);
   }
 }
+
+Simple.propTypes = {
+  width: React.PropTypes.number.isRequired,
+  height: React.PropTypes.number.isRequired,
+};
 
 export default Simple;
