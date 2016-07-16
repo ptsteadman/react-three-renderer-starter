@@ -14,7 +14,10 @@ function Home() {
         </p>
         <br />
         <h2>Patrick Steadman</h2>
-        <h4>Computer Lab</h4>
+        <a href="https://computerlab.io">
+          <h4>Computer Lab</h4>
+        </a>
+        <div></div>
         <a href="https://twitter.com/ptsteadman">
           <h4>@ptsteadman</h4>
         </a>

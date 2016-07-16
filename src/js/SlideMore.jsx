@@ -20,7 +20,10 @@ function SlideMore() {
         <br />
         <h2>Thanks!</h2>
         <h3>Patrick Steadman</h3>
-        <h4>Computer Lab</h4>
+        <a href="https://computerlab.io">
+          <h4>Computer Lab</h4>
+        </a>
+        <div></div>
         <a href="https://twitter.com/ptsteadman">
           <h4>@ptsteadman</h4>
         </a>

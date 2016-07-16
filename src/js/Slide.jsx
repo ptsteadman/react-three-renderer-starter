@@ -9,7 +9,7 @@ function Slide(props) {
       <br />
       <div style={{ float: 'right' }}>
         {props.index > 0 && <Link to={`slide-${props.index - 1}`}>Prev</Link>}
-        <Link to={`slide-${props.index + 1}`}>Next</Link>
+        {props.index < 12 && <Link to={`slide-${props.index + 1}`}>Next</Link>}
       </div>
     </div>
   );
