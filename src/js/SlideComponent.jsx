@@ -5,7 +5,7 @@ import Simple from './Simple.jsx';
 
 function SlideComponent() {
   return (
-    <Slide title="Turning the Scene into a Component" index={10}>
+    <Slide title="Turning the Scene into a Component" index={11}>
       <div>
         <Simple width={200} height={200} />
         <pre>{"<Box width={200} height={200} />"}</pre>
