@@ -8,7 +8,7 @@ function SlideDemos() {
   return (
     <Slide
       title="react-three-renderer Examples and Demos"
-      index={5}
+      index={6}
     >
       <ul>
         <li>non-interactive scene: {r3rEx}</li>

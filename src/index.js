@@ -12,6 +12,8 @@ import SlideCustomRenderers from './js/SlideCustomRenderers.jsx';
 import SlideBlessed from './js/SlideBlessed.jsx';
 import SlideReact3 from './js/SlideReact3.jsx';
 import SlideDemos from './js/SlideDemos.jsx';
+import SlideHow1 from './js/SlideHow1.jsx';
+import SlideHow2 from './js/SlideHow2.jsx';
 
 ReactDOM.render((
   <Router history={hashHistory}>
@@ -24,6 +26,8 @@ ReactDOM.render((
       <Route path="slide-4" component={SlideBlessed} />
       <Route path="slide-5" component={SlideReact3} />
       <Route path="slide-6" component={SlideDemos} />
+      <Route path="slide-7" component={SlideHow1} />
+      <Route path="slide-8" component={SlideHow2} />
     </Route>
   </Router>
 ), document.getElementById('app'));

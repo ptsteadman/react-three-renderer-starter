@@ -3,7 +3,7 @@ img {
 }
 
 #app {
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
 }
 
@@ -22,4 +22,8 @@ li {
 
 p {
   font-size: 1.5em;
+}
+
+pre {
+  font-size: 1.3em;
 }
