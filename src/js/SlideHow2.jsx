@@ -8,7 +8,7 @@ import '../css/default.css';
 
 function SlideHow2() {
   return (
-    <Slide title="How To: react-three-renderer" index={8}>
+    <Slide title="Simple Box Example Code" index={8}>
       <Highlight className="jsx">
         {threeExample}
       </Highlight>

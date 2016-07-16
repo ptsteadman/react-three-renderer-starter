@@ -9,13 +9,14 @@ function Home() {
     >
       <div>
         <p>
-          Live the dream of 1997 in 2017: use React to create reusable,
-          interactive 3D components that work just like the rest of your
-          webapp.
+          Use react-three-renderer to create reusable, composable, interactive
+          3D components that work just like the rest of your React application.
         </p>
-        <h3>Patrick Steadman</h3>
+        <br />
+        <h2>Patrick Steadman</h2>
+        <h4>Computer Lab</h4>
         <a href="https://twitter.com/ptsteadman">
-          <h5>@ptsteadman</h5>
+          <h4>@ptsteadman</h4>
         </a>
       </div>
     </Slide>

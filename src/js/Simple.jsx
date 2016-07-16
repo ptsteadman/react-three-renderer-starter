@@ -58,7 +58,7 @@ class Simple extends React.Component {
             depth={3}
           />
           <meshLambertMaterial
-            color={0xacccd5}
+            color={this.props.color || 0xacccd5}
           />
         </mesh>
       </scene>
@@ -69,6 +69,7 @@ class Simple extends React.Component {
 Simple.propTypes = {
   width: React.PropTypes.number.isRequired,
   height: React.PropTypes.number.isRequired,
+  color: React.PropTypes.number,
 };
 
 export default Simple;

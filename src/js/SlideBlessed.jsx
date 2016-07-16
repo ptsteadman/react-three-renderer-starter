@@ -1,11 +1,11 @@
 import React from 'react';
-import blessedImg from '../images/blessed.gif';
 import Slide from './Slide.jsx';
 
 function SlideBlessed() {
+  const b = 'https://raw.githubusercontent.com/Yomguithereal/react-blessed/master/img/demo.gif';
   return (
     <Slide title="Customer Renderer Example: React-Blessed" index={4}>
-      <img src={blessedImg} alt="Blessed, terminal rendering for react." />
+      <img src={b} alt="Blessed, terminal rendering for react." />
     </Slide>
   );
 }

@@ -4,12 +4,15 @@ import Simple from './Simple.jsx';
 
 function App(props) {
   const size = 50;
+  const repoUrl = 'https://github.com/ptsteadman/react-three-renderer-starter';
   return (
     <div>
       <Link to="/">
         <Simple width={size} height={size} />
       </Link>
-      <a style={{ float: 'right', lineHeight: `${size}px` }} href="http://computerlab.io">Computer Lab</a>
+      <a style={{ float: 'right', lineHeight: `${size}px` }} href={repoUrl}>
+        Source
+      </a>
       {props.children}
     </div>
   );

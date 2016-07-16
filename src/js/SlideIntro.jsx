@@ -3,11 +3,11 @@ import Slide from './Slide.jsx';
 
 function SlideIntro() {
   return (
-    <Slide title="So You Want a Website with 3D Components" index={1}>
+    <Slide title="So You Want to Add 3D Component to a React App" index={1}>
       <ul>
-        <li>and you're using React, or want to use it</li>
-        <li>you want to use exciting new WebGL libraries like ThreeJS</li>
-        <li>...but they assume a very non-React way of doing things</li>
+        <li>and you want to use helpful WebGL libraries like <b>ThreeJS</b></li>
+        <li>...but these libraries assume a very <b>non-React way</b> of doing things</li>
+        <li>...direct DOM and state modification, explicit render loops, etc</li>
       </ul>
     </Slide>
   );

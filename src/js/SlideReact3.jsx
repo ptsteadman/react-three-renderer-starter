@@ -11,8 +11,9 @@ function SlideReact3() {
     >
       <ul>
         <li>toxicFork's {r3rLink} renders 3D objects to a canvas node using ThreeJS</li>
-        <li>it's a custom React renderer, like Blessed</li>
+        <li>it's a custom React renderer, just like Blessed</li>
         <li>I prefer it over {r3Link}, another ThreeJS/React implementation</li>
+        <li>stable enough for production, in my experience</li>
       </ul>
     </Slide>
   );
