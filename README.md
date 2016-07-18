@@ -1,6 +1,8 @@
 # react-three-renderer-starter
 
 A basic webpack setup for a static site using react-three-renderer.
+Includes a presentation outlining the basic concepts of react-three-renderer,
+live demo [here](https://ptsteadman.github.io/react-three-renderer-starter).
 
 ## Setup
 
