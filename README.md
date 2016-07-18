@@ -9,5 +9,5 @@ A basic webpack setup for a static site using react-three-renderer.
 ## Usage
 
 1. To run locally, `npm run watch`
-2. To build a static site to `/dist', `npm run build`
+2. To build a static site to `/dist`, `npm run build`
 
